@@ -10,6 +10,7 @@
             height: 360px;
             width: 100%;
             object-fit: cover;
+            margin-bottom: 16px;
         }
     </style>
 
@@ -21,6 +22,8 @@
     <h1 class="text-center mt-2 mb-4">{{company_name}} Explorer</h1>
     <img class="img-fluid" id="banner" src="static/banner.jpg" alt="" height="320">
     <h2 class="text-center mt-2 mb-4">About Internship</h2>
+    <div class="row " style="margin-bottom: 16px;">
+        <div class="col-6">
     <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
         Illo harum ab, molestias laboriosam molestiae provident 
         similique dolor sit optio odit, asperiores odio vel tempore
@@ -29,6 +32,11 @@
           explicabo nobis itaque recusandae dolor? Labore corrupti 
           iure libero corporis quas totam doloribus veniam cum deleniti
            non molestiae, dicta, quisquam at officia reprehenderit. </p>
+        </div> 
+           <div class="col-6">
+        <img src="static/emp.jpg" alt="" style="height: 320px; border-radius: 1.2rem;">
+        </div>     
+    
     <h2 class="text-center mt-2 mb-4">Open positions</h2>
     <div>
         {% for job in jobs %}
@@ -37,7 +45,7 @@
     </div>
     <div class="text-center">
     <button class="btn btn-primary btn-lg">Contact us</button>
-    <p class="mt-4">Copyright 2023, jobs</p>
+    {% include 'footer.html' %}
 </div>
 </div>
 
